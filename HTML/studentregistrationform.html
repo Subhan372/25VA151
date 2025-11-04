@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        h2{
+            text-align:center;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h2>STUDENT REGISTRATION FORM</h2>
+<hr>
+<form action="backend.php">
+<div>
+<label for="name">Full name</label> 
+<input type="texr" placeholder="enter your name" id="name">
+</div>
+<br>
+<div>
+<lable for="100">Email</lable>
+<input type="email" name="email" id="100" placeholder="enter valid email address">
+</div>
+<br>
+<div>
+    <label for="pass">Password</label>
+    <input type="password" name="password" id="pass" placeholder="enter password">
+</div>
+<br>
+<div>
+    Gender: 
+    male:<input type="radio" name="gender" >
+   female: <input type="radio" name="gender" >
+    other:<input type="radio" name="gender">
+</div>
+<br>
+<div>
+    course:<select><option>cse aiml</option><option>cse core</option><option>ECE</option><option>ELCE</option></select>
+</div>
+<br>
+<div>
+    <label for="contact">contact number:</label>
+ <input type="phone" name="number" placeholder="enter your number" id="contact">
+</div>
+<br>
+<div>
+    Address:
+    <br>
+    <textarea rows="20" columnn="50"></textarea>
+</div>
+<br>
+<div>
+<input type="submit" name="Register">
+<input type="reset" name="clear">
+</div>
+<hr>
+    </form>
+    <p>
+        &copy; 2025 student registration portal 
+    </p>
+</body>
+</html>

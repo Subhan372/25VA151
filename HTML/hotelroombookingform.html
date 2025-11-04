@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            text-align: center;
+        }
+        form{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Hotel room booking form</h2>
+    <form action="backend.php" >
+       <label for="name">Full name</label>
+        <div>
+      <input type="text" name="full name" id="name">
+        </div>
+        <br>
+        <Div> 
+            <label for="email"> Email</label>
+        <input type="email" name="my email" id="email">
+        </Div>
+        <br>
+        <div>
+            <label for="contact">Phone:</label>
+        <input type="number" name="myphone" id="contact">
+        </div>
+        <br>
+        <div>
+            <label for="102"> check in date:</label>
+         <input type="date" id="102" >
+        </div>
+        <br>
+        <div>
+            <label for="103"> check out date:</label>
+           <input type="date" id="103">
+        </div>
+        <br>
+        <div>
+            room type:<select><option>single</option><option>double</option></select>
+        </div>
+        <br>
+        <div>
+            <label for="guests"> number of guests:</label>
+           <input type="number" id="guests">
+        </div>
+        <br>
+        <diV>
+            <label for="request">special request:</label>
+        <br>
+        <textarea rows="10 column=50" id="request"></textarea>
+        </diV>
+        <br>
+        <input type="submit" value="submit now">
+        <input type="reset" value="reset now">
+        <br>
+    </form>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slector css :css combinator</title>
+    <style>
+        /* div h1{
+            color: blue;
+        }
+        div p{
+            color: rgb(37, 177, 131);
+            font-size: 20px;
+        }
+        .text p{
+            background-color: red;
+        }
+         p{
+            background-color: yellow;
+         } */
+         div +p{
+            font-size: 30px;
+
+         }
+         a:hover{
+            background-color: brown;
+
+         }
+         div p::first-letter{
+            color: blue;
+         }
+         ul{
+            list-style:name;
+            display:flex;
+         }
+       ul li{
+        margin:1px solid #f04;
+        padding-right:20px;
+       }
+         ul li{
+          
+            color: rgb(219, 229, 229);
+            background-color: black;
+            padding:5px;
+         }
+
+        
+    </style>
+
+</head>
+<body>
+    <div class="text" >
+          <h1>hello abes</h1>
+        <p >
+        
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque in odit eveniet accusantium fugiat sequi blanditiis, beatae minima voluptatum quidem, adipisci commodi, id delectus nam distinctio deserunt esse maxime dicta.
+        </p>
+    </div>
+    <div>
+        <a href="https//google.com">this is a link</a>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae dolores rerum at unde, nobis dignissimos modi distinctio molestiae alias corrupti laudantium eveniet eligendi. Eius harum dolore voluptatum id voluptate ipsa.</p>
+    </div>
+    <h2>third para</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa tempora quos inventore quas distinctio iste veniam in, similique quidem veritatis reprehenderit quia, suscipit nulla molestias! Laudantium numquam odit dolor autem.</p>
+    <ul>
+    <li>red</li>
+   <li>blue</li>
+   <li>black</li>
+    </ul>
+</body>
+</html>
