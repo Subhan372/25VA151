@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS flex</title>
+    <style>
+        :root{
+            --gap:12px;
+            --box-bg:rgb(21,176,124);
+            --main-bg:chocolate;
+        }
+
+        /* Page layout */
+        html,body{height:100%;}
+        body{
+            margin:30px;
+            padding:60px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            background:#f4f4f4;
+            box-sizing:border-box;
+        }
+
+        /* Flex container */
+        main{
+            max-width:1000px;
+            min-height:400px;
+            background-color: var(--main-bg);
+            margin:0 auto;
+            border-left:20px solid greenyellow;
+            border-right:20px solid red;
+            box-shadow:0 6px 18px rgba(0,0,0,0.25);
+            padding:20px;
+            display:flex;                 /* make it a flex container */
+            flex-wrap:wrap;               /* allow boxes to wrap */
+            gap:var(--gap);
+            align-items:flex-start;
+            justify-content:flex-start;
+        }
+
+        /* Flex items (boxes) */
+        .box{
+            flex:1 1 180px;               /* grow, shrink, base width */
+            min-width:140px;
+            height:120px;
+            background-color:var(--box-bg);
+            color:#fff;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-weight:600;
+            border-radius:8px;
+            box-shadow:0 4px 8px rgba(0,0,0,0.12);
+            padding:10px;
+            text-align:center;
+            transition:transform .18s ease, box-shadow .18s ease;
+        }
+
+        /* Visual variant for intentionally empty boxes */
+        .box.empty{
+            background:rgba(255,255,255,0.18);
+            color:rgba(0,0,0,0.6);
+            font-style:italic;
+        }
+
+        .box:hover{transform:translateY(-6px); box-shadow:0 10px 20px rgba(0,0,0,0.18);}
+
+        /* Responsive tweaks */
+        @media (max-width:700px){
+            main{padding:12px;}
+            .box{flex-basis:calc(50% - var(--gap));}
+        }
+
+        @media (max-width:420px){
+            .box{flex-basis:100%;}
+        }
+    </style>
+    <main>
+        <div class="box">you</div>
+        <div class="box">are</div>
+        <div class="box">really</div>
+        <div class="box">messed</div>
+        <div class="box">up</div>
+        <div class="box">bruh!!</div>
+        <div class="box">help</div>
+        <div class="box empty">(empty)</div>
+        <div class="box empty">(empty)</div>
+        <div class="box empty">(empty)</div>
+        <div class="box empty">(empty)</div>
+        <div class="box empty">(empty)</div>
+        <div class="box empty">(empty)</div>
+    </main>
+        
+    </main>
+    
+</body>
+</html>
