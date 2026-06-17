@@ -1,0 +1,52 @@
+ody {
+margin: 0;
+font-family: 'Segoe UI', Arial, sans-serif;
+background-color: #e9ecef;
+}
+.outer-box {
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.container {
+background: #ffffff;
+padding: 45px 60px;
+border-radius: 16px;
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+text-align: center;
+width: 420px;
+transition: 0.3s ease;
+}
+h1 {
+font-size: 28px;
+color: #1f2937;
+margin-bottom: 15px;
+font-weight: 600;
+}
+.count {
+font-size: 52px;
+font-weight: bold;
+color: #111827;
+margin: 20px 0 30px;
+}
+.buttons {
+display: flex;
+justify-content: center;
+gap: 15px;
+margin-bottom: 20px;
+}
+button {
+background: linear-gradient(135deg, #1e73d8, #2563eb);
+color: white;
+padding: 10px 20px;
+border-radius: 8px;
+cursor: pointer;
+font-size: 14px;
+font-weight: 500;
+transition: all 0.25s ease;
+}
+.reset-btn {
+display: block;
+margin: 10px auto 0;
+padding: 100;}
