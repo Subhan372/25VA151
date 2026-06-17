@@ -1,0 +1,26 @@
+.container{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.heading{
+align-items: center;
+text-align: center;
+font-size: 30px;
+font-weight: bold;
+margin-bottom: 20px;
+}
+.cards{
+text-align: center;
+width: 300px;
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+.card{
+background-color: aliceblue;
+padding : 15px;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
